@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  background-image:url("/assets/bg-pattern-top-desktop.svg"),
+  url("/assets/bg-pattern-bottom-desktop.svg") ;
+  background-position: top left, bottom right;
+  background-repeat:no-repeat;
+  background-size: 45%, 75%;
+}
+
+.grid-container {
+  display: grid;
+  gap: 3rem;
+  padding: 3rem ;
+}
+
+.top-grid, .bottom-grid {
+  display: grid;
+  grid-template-columns: 300px;
+  gap: 1rem;
+  text-align: center;
+}
+
+.grid-item1 {
+  display: grid;
+  place-items: 
+  left;
+  gap: 1rem;
+  color: hsl(300, 43%, 22%);
+}
+.grid-item1 h1 {
+  padding: 1rem 0;
+  line-height: 1.7rem;
+  font-size: 2.3rem;
+}
+
+.grid-item1 p {
+  opacity: .7;
+}
+
+.grid-item2 {
+  display: grid;
+  gap: 1rem;
+  place-content: center; 
+}
+
+.rating {
+  width: 300px;
+  display: grid;
+  place-items: center;
+  gap: .5rem;
+  background-color:hsl(300, 24%, 96%);
+  padding: .5rem ;
+  border-radius: .5rem;
+}
+
+.stars {
+  width: 80px;
+  height: 15px;
+  background-image: url("/assets/icon-star.svg");
+  background-repeat:round;
+}
+
+.reviews {
+ color:  hsl(300, 43%, 22%);
+ font-weight: 600;
+ font-size: .8rem;
+}
+
+.feedback-block {
+  display: grid;
+  gap: 1rem;
+  background-color:hsl(300, 43%, 22%) ;
+  padding: 2rem;
+  color:hsl(0, 0%, 100%) ;
+  border-radius: .5rem;
+  text-align: left;
+  font-size: .9rem;
+}
+
+.profile-div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+}
+
+.profile-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile-info h3 {
+   font-size: .9rem;
+}
+
+.profile-info p{
+  color: hsl(333, 80%, 67%, 60%);
+}
+ 
+@media (min-width:600px) {
+
+  .top-grid {
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+  }
+
+  .grid-item1 {
+       text-align: left;
+  }
+
+  .rating {
+    grid-template-columns: 100px 1fr;
+  }
+
+  .rating1 {
+    transform: translateX(-2rem);
+  }
+
+  .rating3 {
+    transform: translateX(2rem);
+  }
+
+  .bottom-grid {
+    grid-template-columns:repeat(3 , 1fr);
+  }
+
+  .block2 {
+    transform: translateY(1rem);
+  }
+
+  .block3 {
+    transform: translateY(2rem);
+  }
+
+}
