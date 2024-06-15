@@ -122,11 +122,14 @@ main {
   .top-grid {
     grid-template-columns: 25rem 1fr;
     gap: 3rem;
-    font-size: 2rem;
   }
 
   .grid-item1 {
        text-align: left;
+  }
+
+  .grid-item1 p {
+      font-size: 1.5rem;
   }
 
   .grid-item1 h1 {
@@ -135,9 +138,12 @@ main {
 
   .rating {
     grid-template-columns: 100px 1fr;
-    font-size: 2rem;
+    
   }
-
+   
+  .reviews {
+    font-size: 1.5rem;
+  }
   .rating1 {
     transform: translateX(-2rem);
   }
@@ -148,14 +154,21 @@ main {
   
    .bottom-grid {
     place-content: center;
-    font-size: 2rem;
+   }
+
+   .feedback-block  {
+    font-size: 1.5rem;
+    line-height: 2rem;
+   }
+
+   .profile-info h3 {
+    font-size: 1.5rem;
    }
 }
 
 @media (min-width:900px) {
   .bottom-grid {
     grid-template-columns:repeat(3 , 1fr);
-     font-size: 2rem;
   }
 
   .block2 {
