@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
+ 
 }
 body {
   display: grid;
@@ -119,16 +120,22 @@ main {
 @media (min-width:600px) {
 
   .top-grid {
-    grid-template-columns: 20rem 1fr;
+    grid-template-columns: 25rem 1fr;
     gap: 3rem;
+    font-size: 2rem;
   }
 
   .grid-item1 {
        text-align: left;
   }
 
+  .grid-item1 h1 {
+      font-size: 3rem;
+  }
+
   .rating {
     grid-template-columns: 100px 1fr;
+    font-size: 2rem;
   }
 
   .rating1 {
@@ -141,12 +148,14 @@ main {
   
    .bottom-grid {
     place-content: center;
+    font-size: 2rem;
    }
 }
 
 @media (min-width:900px) {
   .bottom-grid {
     grid-template-columns:repeat(3 , 1fr);
+     font-size: 2rem;
   }
 
   .block2 {
